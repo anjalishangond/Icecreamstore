@@ -1,0 +1,376 @@
+  body {
+    background-color: bisque;
+  }
+
+  .navbar {
+    display: block;
+    top:7px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    background-color: #130a46;    
+    opacity: 0.95;
+    animation: anavbar;
+    animation-duration: 1s;
+  }
+
+  .navbar img{
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 45px;
+    width: 45px;
+    padding: 0;
+    margin: 0;
+    border-radius: 40px;
+    
+  }
+  
+  .icon{
+    width:2.67vw;
+    height:2.67vw;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+    right:15.33vw;
+    background-repeat: no-repeat;
+    background-size:contain;
+  }
+
+  
+  #home{background-image: url(../images/home.png);}
+  
+  #home:hover {background-image: url(../images/homegif.gif);}
+  
+  #special{background-image: url(../images/ice.png);}
+  
+  #about{background-image: url(../images/about.png);}
+  
+  #contact{background-image: url(../images/contact.png);}
+
+  
+  #special:hover , #contact:hover, #about:hover {
+    animation-name: vibrate;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+  }
+  
+  .nbcont:hover + .icon{
+    animation-name: vibrate;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+  }
+  
+
+  .nbcont {
+    margin-left: 5px;
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    width:14vw;
+  
+  }
+
+  a.nbcont{
+    position:relative;
+    top:-0.67vw;
+    height:1.34vw;
+  }
+
+  .nbcont:hover {
+    text-decoration: underline white;
+    font-size: 22px;
+ 
+}
+
+  #cart-button {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    height:2.67vw;
+    width:2.67vw;
+    float:right;
+    border-radius: 40px;
+    margin-right: 25px;
+  }
+
+  #cart-button img {
+    height:2.67vw;
+    width:2.67vw;
+    padding: 0;
+    margin: 0;
+    border-radius: 40px;
+  }
+
+  #cart-button a {
+    text-decoration: none;
+    color: red;
+  }
+
+
+  #cart-button:hover {
+    animation-name: cart;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+  }
+
+  @keyframes cart {
+    0% {
+      transform: translateX(0);
+    }
+
+    33% {
+      transform: translateX(08px);
+    }
+
+    66% {
+      transform: translateX(-08px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes vibrate{
+    50% {transform: rotate(-09deg)};
+      100% {transform: rotate(09deg)};
+  }
+
+  @keyframes anavbar {
+    from {
+      top: -200px;
+    }
+
+  }
+
+
+  #home-banner {
+    position: relative;
+    top: 25px;
+    width: 100%;
+  }
+
+  #home-banner img {
+    width: 100%;
+    height: 75%;
+  }
+
+  #content-wrapper{
+    margin-top:3.33vw;
+    margin-left: 20px;
+  }
+
+  .home-content{
+    overflow-wrap: break-word;
+    float:left;
+    line-height: 25.6px;
+    text-align:center;
+    width:32.67%;
+  }
+
+  .content-text{
+    font-family: europa;
+    font-size:16px;
+    width:21.13vw;
+    margin:auto;
+  }
+
+  .home-content img{
+    height:26.567vw;
+    width:26.567vw;
+    padding:17px;
+  }
+
+  .spacer{
+    clear:both;
+  }
+  
+  .flavours {
+    background-color: rgb(255, 205, 253);
+    margin-top: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 15px;
+    border: 1px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 250%;
+    width: 30%;
+    padding: 10px;
+    margin-left: 30%;
+    text-decoration: bold;
+  }
+
+  .flavours:hover {
+    width: 35%;
+    background-color: rgb(231, 105, 112);
+    transition: all 0.5s ease-out;
+    text-shadow: 2px 2px 5px rgb(241, 241, 236);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 225px 60px 225px 60px 225px 60px;
+    grid-gap: 10px;
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    background-color: lavender;
+    border-radius: 10px;
+    border:4px solid blue;
+  }
+  
+  .grid>div {
+    margin-left: 24px;
+    margin-top: 20px;
+    width:15vw;
+    border-radius: 15px;
+    
+  }
+
+
+  /* css for text in even row */
+  .grid .flavor-text>a {
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    text-decoration-line: none;
+    text-transform: capitalize;
+    color: #af0446;
+    font-weight: 200px ;
+  
+  }
+
+  .grid .flavor-text>a:hover {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #af0446;
+  text-shadow: 2px 2px 2px grey;
+  }
+
+  .grid img {
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    border-radius: 15px;
+    border: 2px solid black;
+  }
+
+  .grid img:hover {
+    width: 110%;
+    height: 110%;
+    transition: width 1s,height 1s;
+    justify-self: center;
+    border-radius: 15px;
+  }
+
+
+  * {
+    Padding: 0;
+    margin: 0;
+  }
+
+  .footer-container {
+    background-color: #ca756f;
+    padding: 2rem 0 2rem 0;
+    position: relative;
+    top: 50px;
+  }
+
+  .footer {
+    width: 80%;
+    background-color: #f5d0bf;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;  
+    font-size:18px;
+  }  
+  
+  .footer-heading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+  }
+
+  .footer-heading h2 {
+    margin-bottom: 2rem;
+  }
+
+  .footer-heading a {
+    color: rgb(26, 24, 24);
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+
+  }
+
+  .footer-heading a:hover {
+    color: rgb(10, 198, 255);
+    transition: 0.3s ease-out;
+  }
+
+  .footer-email-form h2 {
+    margin-bottom: 2rem;
+  }
+
+  #footer-email {
+    width: 250px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #footer-email::placeholder {
+    color: #b1b1b1;
+  }
+
+  #footer-email-btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    background-color: #F9423D;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+  }
+
+  #footer-email-btn:hover {
+    cursor: pointer;
+    background-color: rgb(89, 197, 240);
+    transition: all 0.4s ease-out;
+  }
+
+  #splash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200%;
+    width: 100%;
+    background-color: lightblue;
+    z-index: 99;
+  }
+
+  #splash img {
+    position: absolute;
+    top: 200px;
+    left: 35%;
+  }

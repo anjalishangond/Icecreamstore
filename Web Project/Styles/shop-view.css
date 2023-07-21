@@ -1,0 +1,264 @@
+body{
+    background-image: url(../images/bg3.jpg);
+}
+
+
+.banner {
+    position: relative;
+    top: 25px;
+    width: 100%;
+  }
+
+  .banner img {
+    width: 100%;
+    /* height: 75%; */
+    height:800px;
+  }
+
+ul {
+    background-color: #fff0f5   ;
+    height: 600px;
+    float:left;
+    list-style-type: none;
+    padding: 0;  
+     margin: 0;
+    margin-left: 25px;
+}
+
+ul li{
+    /* margin-left:100px; */
+    background-color: yellow;
+    /* background-color: #080A52; */
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border:3px solid orange;
+    
+}
+
+
+ul li h2 {
+    font-family:Georgia, serif;
+    display: block;
+    text-transform: uppercase;
+    color: darkblue;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+ul li h3{
+    background:url("../images/ice.png") no-repeat;
+    font-size: 25px;
+    font-family: COURIER;
+    padding: 5px;
+    padding-left: 70px;
+}
+
+ul li a{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: COURIER;
+    text-decoration: none;
+}
+
+@keyframes vibrate{
+    0% {transform: rotate(0deg)}
+    50%{transform:rotate(-9deg)}
+    100% {transform: rotate(09deg)}
+  }
+
+ul li:hover{
+    background-color:orange;
+    animation-name: vibrate;
+    animation-duration: 2s;
+}
+
+ul li a:hover{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: COURIER;
+    font-size: 20px;
+    color: blue;
+    /* background-color: lime; */
+}
+
+.grid-item {
+    width : 273.8px;
+    height : 273.8px; 
+    border : 0px solid #ccc;
+    background-color:rgb(252, 252, 252);
+    margin-top:20px;
+    margin-right:10px;
+}
+
+.grid-item img{
+    width : 273.8px;
+    height : 273.8px; 
+    background-size: contain;
+    border:1px solid rgb(61, 56, 56);
+    border-radius: 10px;
+}
+
+.grid-item img:hover{
+    transform : scale(1.1,1.1) rotate(5deg);
+    transition-duration:1.5s;
+    opacity: 0.75;    
+    transition-timing-function: ease-in-out;
+    filter : brightness(60%);
+    transform : opacity;
+    
+}
+
+.grid-item img:hover +h2 {
+    z-index: 5; 
+    display:block;
+    /* text-shadow: 2px 2px 5px rgb(51, 186, 219); */
+     filter: brightness(150%);    
+    animation-name: fade-in-text;
+    animation-duration:3s;
+    /* color: #234E70; */
+    /* color: #FFFFD2; */
+    color: black;
+    text-transform: capitalize;
+}
+
+
+@keyframes fade-in-text {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+
+.grid-item h2{
+    pointer-events: none;
+    display:none;
+    position:relative;
+    font-family: 'Times New Roman', Times, serif ;
+    width:270px;
+    font-size:22px;
+    color : rgb(14, 12, 12);
+    margin-top: -203px;
+    text-align: center; 
+  
+}
+
+
+
+#pop-wrapper {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-row-gap: 50px;
+    justify-items: center;
+}
+
+.grid-item .modal-content img{
+    pointer-events: none;
+    
+}
+
+
+/*******************************/
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;  
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color:  #FBF8BE;
+    margin: 8% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 45%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: black;
+    float: right;
+    font-size: 33px;
+    font-weight: bold;
+    background-color: red;
+    border-radius :40px;
+    width:35px;
+    height:37px;
+    text-align:center;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  /* ulta nai?? bg black krdo fix*/
+h3.item-name {
+    text-align: center;
+    font-size: 35px;
+    /* color:#900C3F; */
+    color: #02055A;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 15px;
+    text-decoration: underline;
+}
+
+ 
+h3.item-price {
+    text-align: center;
+    font-size: 25px;
+    margin: 15px;
+    text-decoration: underline;
+    color: darkgreen ;
+    /* color */
+}
+
+.modal .modal-content img{
+    margin: auto;
+    height: 50%;  
+    width: 50%;
+    background-color: lavender;
+    margin-left: 20%;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.add ,.added{
+    border-radius:5px;
+    width: 120px;
+    height: 40px;
+    border-radius: 4px;
+    border:none;
+    background-color: #F9423D;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    margin-left:40%;
+  }
+  .add:hover{
+    cursor:pointer;
+    background-color: rgb(89, 197, 240);
+    transition: all 0.4s ease-out;
+  }
+
+  .added{
+      background-color:silver;
+  }
+    
+
+

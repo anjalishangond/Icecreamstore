@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>THANK YOU</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="posters/logo.png" type="image/icon type">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://kit.fontawesome.com/9d1e6c4640.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="Styles/homepage.css">
+  <link rel="stylesheet" href="Styles/shop-view.css">
+  <style>
+    img {
+      /* position: relative; */
+      z-index: -1;
+    }
+
+    h1.thank-title {
+      font-family: century gothic;
+      font-size: 450%;
+      padding-top: 100px;
+    }
+
+    span.t {
+      color: darkviolet;
+    }
+
+    span.h {
+      color: darkblue;
+    }
+
+    span.a {
+      color: blue;
+    }
+
+    span.n {
+      color: green;
+    }
+
+    span.k {
+      color: gold;
+    }
+
+    span.y {
+      color: orange;
+    }
+
+    span.o {
+      color: red;
+    }
+
+    span.u {
+      color: chartreuse;
+    }
+
+    p.thank-title {
+      font-family: century gothic;
+      font-size: 180%;
+      color: goldenrod;
+      margin: 20px 20px 0px 20px;
+      padding-top: 100px;
+    }
+
+
+
+    #home-btn {
+      font-family: 'Open Sans', 'sans-serif';
+      padding-top: 50px;
+      text-align: center;
+      background-color: #55acee;
+      box-shadow: 0px 5px 0px 0px #3C93D5;
+      border-radius: 5px;
+      padding: 15px 25px;
+      font-size: 22px;
+      text-decoration: none;
+      color: #fff;
+      position: absolute;
+      left: 41%;
+      top: 95%;
+      border: none;
+      cursor: pointer;
+    }
+
+    #home-btn:hover {
+      background-color: #6FC6FF;
+    }
+  </style>
+</head>
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="homepage.html" class="nbcont" id="hname"> HOME</a>
+    <a href="homepage.html" class="icon" id="home"> </a>
+
+    <a href="special.html" class="nbcont" id="spc">SPECIALS</a>
+    <div class="icon" id="special"> </div>
+
+    <a href="contact.html" class="nbcont">CONTACT</a>
+    <div class="icon" id="contact"></div>
+
+    <a href="about.html" class="nbcont">ABOUT</a>
+    <div class="icon" id="about"> </div>
+
+    <button id="cart-button"><a href="cart.html"><img src="images/cart.jpeg" />
+      </a></button>
+  </div>
+  <br><br><br>
+
+  <div class="thankyou" style="margin-top: 100px;">
+    <center>
+      <div style="width: 25%;float: left;">
+        <img src="images/Cotton Candy cones.png">
+      </div>
+      <div style="width: 50%;float: left;">
+        <h1 class="thank-title">
+          <u>
+            <span class="t"><u>T</u></span>
+            <span class="h"><u>H</u></span>
+            <span class="a"><u>A</u></span>
+            <span class="n"><u>N</u></span>
+            <span class="k"><u>K</u></span>
+            <span class="y"><u>Y</u></span>
+            <span class="o"><u>O</u></span>
+            <span class="u"><u>U</u></span>
+          </u>
+        </h1>
+
+        <p class="thank-title">YOU HAVE SUCCESFULLY ORDERD YOUR ORDER</p><br><br>
+        <p style="font-size: 20px;"><a href="#"><i class="fa fa-envelope" style="font-size: 32px;"></i></a> email
+          receipt including details about your order has been sent to the mail provided, please keep it for future
+          references.</p><br><br>
+        <p style="font-size: 20px;"> you can go through our official website for status of your order.<a href="#"><i
+              class="fa fa-link" style="font-size: 32px;"></i></a></p>
+      </div>
+      <div style="width: 25%;float: left;">
+        <img src="images/Cotton Candy cones.png">
+      </div>
+    </center>
+
+  </div>
+  <a href="homepage.html"><button id="home-btn">Return to Homepage</button></a>
+  <div class="footer-container" style="margin-top: 700px;">
+    <div class="footer">
+      <div class="footer-heading footer-1">
+        <h2> About Us </h2>
+        <a href="#">Blog</a>
+        <a href="#">Demo</a>
+        <a href="#">Coustomers</a>
+        <a href="#">investores</a>
+        <a href="#">terms of sevice</a>
+
+      </div>
+
+      <div class="footer-heading footer-2">
+        <h2> Contact Us </h2>
+        <a href="#">Delivery</a>
+        <a href="#">Jobs</a>
+        <a href="#">Contact</a>
+        <a href="#">Support</a>
+        <a href="#">Offers</a>
+
+      </div>
+      <div class="footer-heading footer-3">
+        <h2> Social Media </h2>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Telegram</a>
+        <a href="#">Youtube</a>
+
+      </div>
+      <div class="footer-email-form">
+        <h2> Items Catalog</h2>
+        <input type="email" placeholder="Enter Ur Email address" id="footer-email">
+        <input type="submit" value="sign up" id="footer-email-btn">
+      </div>
+    </div>
+  </div>
+  <script>
+    sessionStorage.clear();
+  </script>
+</body>
+
+</html>
